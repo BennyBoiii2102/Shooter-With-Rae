@@ -1,4 +1,7 @@
 import pygame
+from time import sleep
 
 def Game():
-    return
+    quit = True
+    sleep(1)
+    return quit
