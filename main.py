@@ -1,5 +1,5 @@
 import pygame
-import Loop
+import game.Loop
 import main_functions as func
 from gui.windowinit import WindowInit as winit 
 
