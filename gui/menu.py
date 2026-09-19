@@ -14,4 +14,9 @@ def MenuDisplay(screen, background, font):
 
     pygame.display.flip()
 
+    while True:
+        if keys[pygame.K_SPACE]:
+            break
+        if keys[pygaem.K_ENTER
+
     return screen, background, font
