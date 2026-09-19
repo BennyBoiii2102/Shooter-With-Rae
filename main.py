@@ -1,15 +1,18 @@
 import pygame
-import game.Loop
+import game.Loop as Loop
 import main_functions as func
 from gui.windowinit import WindowInit as winit 
+from gui.menu import MenuDisplay as dispMenu
 
-def MainLoop():
+def MainLoop(screen, background):
     while True:
-        quit = Loop.Game()
+        exit, screen, background = Loop.Game(screen, background)
+        pygame.display.flip()
 
-        if quit == False:
+        if exit == True:
             break
 
 
-screen, clock, background, font, text = winit()
-MainLoop()
+screen, clock, background, font = winit()
+screen, background, font = dispMenu(screen, background, font)
+MainLoop(screen, background)

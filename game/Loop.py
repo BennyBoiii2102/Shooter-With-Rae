@@ -1,7 +1,9 @@
 import pygame
 from time import sleep
 
-def Game():
-    quit = False
+def Game(screen, background):
+    exit = True
     sleep(1)
-    return quit
+    screen = screen
+    background = background
+    return exit, screen, background
