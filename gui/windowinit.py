@@ -1,6 +1,6 @@
 import pygame
 import main_functions as func
-from time import sleep
+from   time           import sleep
 
 def WindowInit():
     running = True
