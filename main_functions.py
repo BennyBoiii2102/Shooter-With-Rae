@@ -17,3 +17,7 @@ def init(package):
     except Exception as e:
         # e being the error message that you would get otherwise
         print(f"Failed to initialize pygame.{package}: {e}")
+
+def ClearScreen(screen, DefaultScreen):
+    screen.blit(DefaultScreen, (0, 0))
+    screen.display.flip()
