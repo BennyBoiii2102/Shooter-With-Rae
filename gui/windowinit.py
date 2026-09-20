@@ -15,6 +15,8 @@ def WindowInit():
     background = background.convert()
     background.fill((10, 10, 10))
 
+    BlankScreen = background
+
     font = pygame.font.SysFont("arial", 36)
 
     text = font.render("Welcome to our game!", True, (255, 255, 255))
@@ -43,4 +45,4 @@ def WindowInit():
     screen.blit(background, (0, 0))
     pygame.display.flip()
 
-    return screen, clock, background, font
+    return screen, clock, background, font, BlankScreen

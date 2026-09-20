@@ -9,10 +9,12 @@ def MainLoop(screen, background) -> None:
         exit, screen, background = Loop.Game(screen, background)
         pygame.display.flip()
 
+        func.ClearScreen(screen, BlankScreen)
+
         if exit == True:
             break
 
 
-screen, clock, background, font = winit()
-screen,        background, font = DispMenu(screen, background, font)
+screen, clock, background, font, BlankScreen = winit()
+screen,        background, font              = DispMenu(screen, background, font)
 MainLoop(screen, background)
