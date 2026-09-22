@@ -17,6 +17,7 @@ def MenuDisplay(screen, background, font):
     while True:
         if keys[pygame.K_SPACE]:
             break
-        if keys[pygaem.K_ENTER
+        if keys[pygame.K_ENTER]:
+            break
 
     return screen, background, font
